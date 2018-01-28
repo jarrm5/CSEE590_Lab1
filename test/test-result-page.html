@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/htmlMaker.js"></script>
+    <script src="../js/controller.js"></script>
+
+    <script id="result-template" type="text/html">
+
+        <div class="result-container">
+            <div class="result-img-container">
+                <img src="../img/{{image}}" alt="govt.jpg">
+            </div>
+            <div class="result-info-container">
+                <div class="result-title-bar">
+                    <span id="result-name">{{name}}</span>
+                </div>
+                <div class="result-info-area">
+                    <span>{{instructor}}</span>
+                    <span>{{level}}</span>
+                    <span>{{career}}</span>
+                    <span>{{semester}} ({{duration}})</span>
+                    <span>{{credhours}}</span>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+</head>
+<body>
+
+<!--
+<div class="result-container">
+    <div class="result-img-container">
+        <img src="../img/govt.jpg" alt="govt.jpg">
+    </div>
+    <div class="result-info-container">
+        <div class="result-title-bar">
+            <span id="result-name">PS 170: American Government</span>
+        </div>
+        <div class="result-info-area">
+            <span>Everett Kurt</span>
+            <span>Everett Kurt</span>
+            <span>Everett Kurt</span>
+            <span>Everett Kurt</span>
+            <span>3</span>
+        </div>
+    </div>
+</div>
+-->
+    <div id="result-div"></div>
+
+
+
+
+
+
+
+</body>
+</html>

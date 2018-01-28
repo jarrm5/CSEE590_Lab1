@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <title>Course Registration App</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/htmlMaker.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script id="result-template" type="text/html">
+        <div class="col-md-12 result-container" id="{{id}}">
+            <div class="result-img-container">
+                <img src="../img/{{image}}" alt="{{image}}">
+            </div>
+            <div class="result-info-container">
+                <div class="result-title-bar">
+                    <span id="result-name">{{name}}</span>
+                </div>
+                <div class="result-info-area">
+                    <div class="result-info-area-labels">
+                        <span>Instructor:</span>
+                        <span>Degree level:</span>
+                        <span>Career:</span>
+                        <span>Term:</span>
+                        <span>Credit Hours:</span>
+                    </div>
+                    <div class="result-info-area-fields">
+                        <span>{{instructor}}</span>
+                        <span>{{level}}</span>  
+                        <span>{{career}}</span>   
+                        <span>{{semester}} ({{duration}})</span>    
+                        <span>{{credhours}}</span>
+                    </div>
+                </div>
+                <input class="btn btn-warning btn-lg" type="submit" value="Check Availability" onclick="navigate_to_register_page($(this).parent().parent().attr('id'));">
+            </div>
+        </div>
+    </script>
+
+    <script id="no-result-template" type="text/html">
+        <div class="col-md-12 no-result-container">
+            <h1>No courses match your search</h1>
+        </div>
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="header">
+            <h1>Course Registration App</h1>
+        </div>
+        <div class="row" id="search-form">
+            <div class="search-form-col col-md-3">
+                <label for="level">Degree level:</label>
+                <select class="styled-select blue semi-square" name="level" id="level-select"></select>
+            </div>
+            <div class="search-form-col col-md-3">
+                <label for="semester">Term:</label>
+                <select class="styled-select blue semi-square" name="semester" id="semester-select"></select>
+            </div>
+            <div class="search-form-col col-md-3">
+                <label for="career">Career:</label>
+                <select class="styled-select blue semi-square" name="career" id="career-select"></select>
+            </div>
+            <div class="search-form-col col-md-3">
+                <input class="btn btn-warning btn-lg" type="submit" value="Search Courses" onclick="filter_courses();">
+                <input class="btn btn-warning btn-lg" type="submit" value="Reset" onclick="reset();">
+            </div>
+        </div>
+        <div class="row" id="result-div"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

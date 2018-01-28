@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/htmlMaker.js"></script>
+    <script src="../js/register.js"></script>
+
+    <script id="register-template" type="text/html">
+        <div class="container register-container" id="{{id}}">
+            <div class="row register-title-bar">
+                <div class="col-md-12">
+                    <span id="register-name">{{name}}</span>
+                </div>
+            </div>
+            <div class="row register-info">
+                <div class="col-md-4 register-img-container">
+                    <img src="../img/{{image}}" alt="{{image}}">
+                </div>
+                <div class="col-md-2 register-labels">
+                    <span>Instructor:</span>
+                    <span>Degree Level:</span>
+                    <span>Career:</span>
+                    <span>Term:</span>
+                    <span>Credit Hours:</span>
+                    <span>Rating:</span>
+                    <span>Availability:</span>
+                </div>
+                <div class="col-md-6 register-fields">
+                    <span>{{instructor}}</span>
+                    <span>{{level}}</span>
+                    <span>{{career}}</span>
+                    <span>{{credhours}}</span>
+                    <span>{{semester}} {{duration}}</span>
+                    <div class="register-ratings">
+                        <img src="../img/regular_star.png">
+                        <img src="../img/regular_star.png">
+                        <img src="../img/regular_star.png">
+                        <img src="../img/regular_star.png">
+                        <img src="../img/regular_star.png">
+                    </div>
+                    <span>{{seatstaken}}/{{totalseats}} Seats</span>     
+                </div>
+            </div>
+            <div class="row register-more-fields">
+                <div class="col-md-12 register-description">
+                    {{desc}}
+                </div>
+            </div>
+            <div class="row register-btns">
+                <div class="col-md-12">
+                    <input class="btn btn-warning btn-lg" type="submit" value="Register" onclick="register();">
+                    <input class="btn btn-warning btn-lg" type="submit" value="Back to Search" onclick="navigate_to_index_page();">
+                </div>
+            </div>
+        </div>
+    </script>
+</head>
+
+<body>
+    <div id="register-div"></div>
+</body>
+</html>

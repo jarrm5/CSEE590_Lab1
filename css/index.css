@@ -1,0 +1,167 @@
+body{
+    background: #F7F6F6;
+}
+
+#header{
+    text-align:center;
+}
+
+#header h1 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+#search-form{
+    background-color: #D3DCE8;
+    display: flex;
+    height: 125px;
+    align-items: center;
+    border-radius:5px;
+    margin: 20px 0px;
+}
+
+.search-form-col{
+    display:flex;
+    flex-direction: column;
+}
+
+.search-form-col label{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+}
+
+.search-form-col > select{
+    font-family: 'Playfair Display SC', serif;
+}
+
+.search-form-col:nth-child(4){
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between; 
+    height:100%;
+    
+}
+
+.search-form-col:nth-child(4) > input{
+    width:70%;
+    margin: 7px 0px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.styled-select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    height: 30px;
+    color:white;
+    overflow: hidden;
+    width: 240px;
+    background-color: #F9CA86;
+    text-indent: 5px;
+    border-radius: 5px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+ }
+
+ .styled-select option{
+    text-indent: 5px;
+ }
+
+.btn-lg {
+    background-color:#F9CA86;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#result-div{
+    display:flex;
+    flex-direction:column;
+}
+
+/* #result-template style */
+
+.result-container{
+    display:flex;
+    flex-direction:row;
+    background-color:#F9FBB8;
+    border-radius: 10px;
+    margin: 5px auto;
+    height: 250px;
+    width: 80%;
+}
+
+.result-info-area{
+    display:flex;
+    flex-direction:row;
+}
+
+.result-img-container{
+    display: flex;
+    flex-direction: column;
+    overflow: none;
+    width:30%;
+}
+
+.result-img-container img{
+    height:225px;
+    width: 200px;
+    margin:auto;
+    border-radius:10px;
+}
+
+.result-info-container{
+    margin: 0 0 0 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:70%;
+}
+
+.result-info-container input{
+    width:50%;
+    margin: 0 0 15px 0;
+}
+
+.result-title-bar{
+    border-bottom: 5px solid #F9CA86;
+    text-align:center;
+}
+
+.result-title-bar span{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    
+}
+
+.result-info-area-labels, .result-info-area-fields{
+    display:flex;
+    flex-direction:column;
+}
+
+.result-info-area-labels span{
+    font-weight:bold;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.result-info-area-fields{
+    margin: 0 0 0 20px;
+}
+
+.result-info-area-fields span{
+    font-family: 'Playfair Display SC', serif;
+}
+
+/*no results container */
+.no-result-container{
+    background-color:#F9FBB8;
+    border-radius: 10px;
+    margin: 5px auto;
+    height: 75px;
+    width: 80%;
+}
+
+.no-result-container h1{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    text-align:center;
+}

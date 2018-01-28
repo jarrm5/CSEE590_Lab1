@@ -1,0 +1,88 @@
+body{
+    background: #F7F6F6;
+}
+
+.register-container{
+    width:75%;
+}
+
+.register-title-bar{
+    text-align:center;
+    border-bottom: 5px solid #F9CA86;
+}
+
+.register-title-bar span{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.register-info{
+    margin: 8px 0 0 0;
+    height: 175px;
+    height: 200px;
+}
+
+.register-img-container{
+    text-align:center;
+}
+
+.register-img-container img{
+    border-radius: 10px;
+}
+
+.register-labels{
+    display:flex;
+    flex-direction:column;
+    font-family: 'Playfair Display SC', serif;
+    font-weight:bold;
+    height:inherit;
+}
+
+.register-labels span{
+    margin: auto 0px;
+}
+
+.register-fields{
+    display:flex;
+    flex-direction:column;
+    font-family: 'Playfair Display SC', serif;
+    height:inherit;
+}
+
+.register-fields span, .register-fields .register-ratings{
+   margin: auto 0;
+}
+
+.register-description{
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+}
+
+.register-ratings img{
+    height:15px;
+    width:15px;
+}
+
+.register-seats{
+    font-family: 'Playfair Display SC', serif;
+}
+
+.register-more-fields{
+    margin: 8px 0 0 0;
+}
+
+.register-btns{
+    margin:12px 0 0 0;
+    text-align:center;
+}
+
+.register-btns div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register-btns div input{
+    width: 20%;
+    font-family: 'Playfair Display SC', serif;
+}
